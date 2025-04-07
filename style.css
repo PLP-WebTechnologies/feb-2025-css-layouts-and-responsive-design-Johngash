@@ -52,6 +52,34 @@ h2{
     color: white;
     margin: 10px;
 }
-.bottom{
-    display: flex;flex-wrap: wrap;
+
+@media (max-width: 834px){
+    #top{
+        margin-left: 10vw;
+    }
+
+    #bottom{
+        justify-content: center;
+        margin-left: 10vw;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+    nav{
+        margin-left: 10vw;
+    }
+    #top{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    #top .box,#bottom img{
+        width: 90%;
+    }
+    #bottom{
+        flex-direction: column;
+    }
 }
